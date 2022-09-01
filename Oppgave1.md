@@ -7,4 +7,4 @@ Steg 3: Kjør "npx create-react-app minApp" i terminalen
 Steg 4: Kjør "cd minApp" og deretter "npm start" og se at react appen starter opp!
 
 Gratulerer! Du har nå en egen react app! 
-Gå videre til Oppgave2.md
+Gå videre til [Oppgave2.md](https://github.com/bouvet-bergen/echo-workshop-react/blob/main/Oppgave2.md)
