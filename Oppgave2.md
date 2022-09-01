@@ -8,4 +8,4 @@ Steg 4: Under "img" taggen, legg til en "button" som kjører alert("click!") på
 
 Koden din burde nå være lik som i Oppgave2-Løsning
 
-Gå videre til Oppgave3.md
+Gå videre til [Oppgave3.md](https://github.com/bouvet-bergen/echo-workshop-react/blob/main/Oppgave3.md)
