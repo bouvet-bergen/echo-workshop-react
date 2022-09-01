@@ -6,9 +6,9 @@ Steg 1: Installer Node dersom du ikke allerede har det.  https://nodejs.org/en/d
 
 Steg 2: Clone dette github repo'et, og åpne det i VSCode.
 
-Steg 3: Kjør "npx create-react-app" i "SkrivKodenDinHer" folderen
+Steg 3: Kjør "npx create-react-app minApp" i terminalen
 
-Steg 4: Kjør "npm start" og se at react appen starter opp
+Steg 4: Kjør "cd minApp" og deretter "npm start" og se at react appen starter opp!
 
 Steg 5: Fjern innhold i app.js og legg til bilde av Kanye i toppen av siden. Flytt bildet inn i public folderen din.
 
