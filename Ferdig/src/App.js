@@ -25,7 +25,9 @@ function App() {
   return (
     <div className="App">
       <div className='Content' >
-        <img className={bounce ? 'Bounce': ''} src={'kanye.png'} />
+        <div className={"kanye"}>
+          <img className={`kanye__image ${bounce ? 'Bounce': ''}`} src={'kanye.png'} />
+        </div>
         <Button text='Click me!' onClick={fetchQuote}/>
         {quote && <span>{quote}</span>}
       </div>
