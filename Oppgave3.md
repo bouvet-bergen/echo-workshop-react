@@ -1,4 +1,4 @@
-Steg 1: Lag din egen Button komponent i en ny fil kalt Button.jsx
+Steg 1: Lag din egen Button komponent i en ny fil kalt Button.jsx og bruk denne komponenten i stedet for html button i App.js
 
 Steg 2: Bruk fetch til å hente data fra api.kanye.rest
 
