@@ -4,9 +4,9 @@ Steg 2: Flytt kanye.png, stage.png og dj.png inn i public folderen din.
 
 Steg 3: Legg til en img tag med src='kanye.png' i returverdien til App() i app.js. Bildet vil nå vises i appen din
 
-Steg 4: Under img taggen, legg til en button tag som kjører alert("click!") på onClick og har "Click me!" som tekstinnhold. Nå har du en klikkbar knapp i appen din, men vi vil gjerne at dette skal se litt bedre ut. 
+Steg 4: Under img taggen, legg til en button tag som kjører "() => alert("click!")" på onClick og har "Click me!" som tekstinnhold. Nå har du en klikkbar knapp i appen din, men vi vil gjerne at dette skal se litt bedre ut. 
 
-Steg 5: Lag en div tag rundt img taggen med className='kanye'. Lag deretter enda en div tag rundt den forrige div taggen OG Button taggen med classname='Content'.
+Steg 5: Nå vil vi gjøre koden klar for å motta litt styling. Lag en div tag rundt img taggen med className='kanye'. Lag deretter enda en div tag rundt den forrige div taggen OG Button taggen med classname='Content'.
 returverdien til App skal nå se slik ut:
 
         <div className="App">
@@ -14,7 +14,7 @@ returverdien til App skal nå se slik ut:
             <div className={"kanye"}>
               <img src={'kanye.png'} />
             </div>
-            <button onClick={alert('Click!')}>Click me!</button>
+            <button onClick={() => alert('Click!')}>Click me!</button>
           </div>
         </div>
     
@@ -79,7 +79,7 @@ Steg 6: Fjern alt innhold i App.css filen. Legg til følgende css i filen:
       left: 0;
     }
 
-    .kanye__image {
+    .kanye img {
       transform: translateY(-50px);
     }
 
