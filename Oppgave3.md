@@ -6,6 +6,8 @@ Steg 3: Bruk useState til å lagre og oppdatere sitatet når man trykker på kna
 
 Steg 4: Vis sitatet under knappen
 
+Steg 5: Bruk useEffect til å laste inn et sitat når appen starter.
+
 Koden din burde nå se lik ut som i Oppgave3-Løsning
 
 Gå videre til [Oppgave4.md](https://github.com/bouvet-bergen/echo-workshop-react/blob/main/Oppgave4.md)
