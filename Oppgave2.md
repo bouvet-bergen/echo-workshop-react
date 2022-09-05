@@ -1,4 +1,4 @@
-Steg 1: Fjern linje 7 til og med 19 app.js 
+Steg 1: I App.js: Fjern header taggen og alt inni den (linje 7 til og med 20). 
 
 Steg 2: Flytt kanye.png inn i public folderen din. 
 
