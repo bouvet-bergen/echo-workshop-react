@@ -1,8 +1,10 @@
-Steg 1: Bruk fetch til å hente data fra api.kanye.rest
+Steg 1: Lag din egen Button komponent i en ny fil kalt Button.jsx
 
-Steg 2: Bruk useState til å lagre og oppdatere sitatet når man trykker på knappen.
+Steg 2: Bruk fetch til å hente data fra api.kanye.rest
 
-Steg 3: Vis sitatet under knappen
+Steg 3: Bruk useState til å lagre og oppdatere sitatet når man trykker på knappen.
+
+Steg 4: Vis sitatet under knappen
 
 Koden din burde nå se lik ut som i Oppgave3-Løsning
 
