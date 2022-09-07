@@ -31,7 +31,7 @@ Steg 6: Fjern alt innhold i App.css filen. Legg til følgende css i filen:
     .Content {
       width: 100%;
       max-width: 500px;
-      height: 800px;
+      min-height: 800px;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -45,6 +45,15 @@ Steg 6: Fjern alt innhold i App.css filen. Legg til følgende css i filen:
 
     img {
       max-width: 100%;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
     }
 
     .kanye {

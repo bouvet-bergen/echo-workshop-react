@@ -3,11 +3,11 @@ import {fetchData} from "../fetchData";
 import Button from "../components/Button";
 
 const Kanye = () => {
-    const [quote, setQuote] = useState(null);
+    const [quotes, setQuotes] = useState([]);
     const [bounce, setBounce] = useState(false);
 
     function fetchQuote() {
-        fetchData().then((value) => setQuote(value.quote));
+        fetchData().then((value) => setQuotes([value.quote, ...quotes]));
     }
 
     useEffect(() => {
@@ -16,8 +16,8 @@ const Kanye = () => {
 
 
     useEffect(() => {
-        setBounce(quote?.length > 50);
-    }, [quote])
+        setBounce(quotes[quotes.length - 1]?.length > 50);
+    }, [quotes])
 
     return (
         <div className={"App"}>
@@ -26,7 +26,7 @@ const Kanye = () => {
                     <img className={`kanye__image ${bounce ? 'Bounce' : ''}`} src={'kanye.png'}/>
                 </div>
                 <Button text='Click me!' onClick={fetchQuote}/>
-                {quote && <span>{quote}</span>}
+                {quotes?.map(quote => <span>{quote}</span>)}
             </div>
         </div>
     )
