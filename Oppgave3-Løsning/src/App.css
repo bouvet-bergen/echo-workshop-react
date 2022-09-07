@@ -1,0 +1,80 @@
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Content {
+  width: 100%;
+  max-width: 500px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.Button {
+  width: fit-content;
+}
+
+img {
+  max-width: 100%;
+}
+
+.kanye {
+  position: relative;
+  transform: translateY(-100px);
+}
+
+.kanye::before {
+  content: "";
+  width: 100vw;
+  height: 800px;
+  transform: translateX(calc(-50vw + 250px));
+  background-image: url("/public/stage.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+}
+
+.kanye::after {
+  content: "";
+  width: 580px;
+  height: 500px;
+  background-image: url("/public/dj.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.kanye img {
+  transform: translateY(-50px);
+}
+
+.Bounce {
+  animation: bounce 500ms ease-out 0ms infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(-50px);}
+  50% {transform: translateY(-100px);}
+  100% {transform: translateY(-50px);}
+}
